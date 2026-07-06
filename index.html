@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kolluri Naveen · Licensed Stamp Vendor & Notary</title>
+  <meta name="description" content="Elite legal documentation & notary services in Hanumakonda. Stamp papers, agreements, affidavits, government registrations." />
+  <meta property="og:title" content="Kolluri Naveen · Licensed Stamp Vendor & Notary" />
+  <meta property="og:description" content="Premium legal documentation & notary services in Hanumakonda. Professional, trusted, and fast." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+  <style>
+    /* -------------------- VARIABLES (LUXURY) -------------------- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #0A1E3F;
+      --accent: #B8860B;
+      --accent-light: #D4AF37;
+      --secondary: #0F172A;
+      --bg: #F5F3F0;
+      --card-bg: rgba(255, 255, 255, 0.78);
+      --border-light: rgba(255, 215, 0, 0.15);
+      --text: #1A1A1A;
+      --muted: #5A5A5A;
+      --gold-glow: 0 8px 32px rgba(184, 134, 11, 0.12);
+      --shadow-sm: 0 8px 32px rgba(10, 30, 63, 0.04);
+      --shadow-lg: 0 30px 80px rgba(10, 30, 63, 0.07);
+      --radius-xl: 40px;
+      --radius-lg: 28px;
+      --radius-md: 20px;
+      --transition: 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', 'Poppins', 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    /* -------------------- GLASS & UTILITY (ELITE) -------------------- */
+    .glass {
+      background: var(--card-bg);
+      backdrop-filter: blur(18px) saturate(1.2);
+      -webkit-backdrop-filter: blur(18px) saturate(1.2);
+      border: 1px solid rgba(255, 215, 0, 0.12);
+      box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255,255,255,0.6);
+    }
+    .glass-gold {
+      background: linear-gradient(135deg, rgba(255,215,0,0.04), rgba(184,134,11,0.02));
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(184,134,11,0.15);
+      box-shadow: var(--gold-glow);
+    }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    .section-padding { padding: 100px 0; }
+    .badge-glow {
+      background: linear-gradient(135deg, rgba(184,134,11,0.08), rgba(10,30,63,0.04));
+      border-radius: 100px;
+      padding: 6px 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      color: var(--accent);
+      border: 1px solid rgba(184,134,11,0.12);
+      text-transform: uppercase;
+      display: inline-block;
+      backdrop-filter: blur(4px);
+    }
+    .heading-gradient {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gold-underline {
+      position: relative;
+      display: inline-block;
+    }
+    .gold-underline::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 60%;
+      height: 2.5px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      border-radius: 4px;
+      transition: width 0.5s ease;
+    }
+    .gold-underline:hover::after { width: 90%; }
+
+    /* -------------------- NAVIGATION (ULTRA GLASS) -------------------- */
+    nav {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+      padding: 20px 0;
+      transition: all 0.4s ease;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(24px) saturate(1.4);
+      -webkit-backdrop-filter: blur(24px) saturate(1.4);
+      border-bottom: 1px solid rgba(255,215,0,0.06);
+    }
+    nav.shrink { padding: 10px 0; background: rgba(255, 255, 255, 0.82); box-shadow: 0 4px 40px rgba(0,0,0,0.02); }
+    .nav-container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .logo-group { display: flex; align-items: center; gap: 12px; }
+    .logo-icon { font-size: 2.2rem; line-height: 1; filter: drop-shadow(0 2px 8px rgba(184,134,11,0.2)); }
+    .logo-text {
+      font-weight: 700;
+      font-size: 1.4rem;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .logo-sub {
+      font-size: 0.65rem;
+      font-weight: 500;
+      color: var(--muted);
+      display: block;
+      margin-top: -2px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      -webkit-text-fill-color: var(--muted);
+    }
+    .nav-links { display: flex; gap: 40px; align-items: center; list-style: none; }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--text);
+      transition: 0.3s;
+      position: relative;
+      letter-spacing: 0.2px;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      transition: 0.4s ease;
+    }
+    .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+    .nav-links a.active { color: var(--accent); }
+    .nav-cta {
+      background: linear-gradient(135deg, var(--primary), #1A3A6A);
+      color: white !important;
+      padding: 10px 28px;
+      border-radius: 100px;
+      font-weight: 600;
+      transition: 0.4s;
+      box-shadow: 0 4px 16px rgba(10,30,63,0.12);
+      letter-spacing: 0.3px;
+    }
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 12px 32px rgba(184,134,11,0.2);
+      background: linear-gradient(135deg, var(--accent), #A67B0A);
+    }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: transparent; border: none; padding: 4px; }
+    .hamburger span { width: 28px; height: 2.5px; background: var(--text); border-radius: 4px; transition: 0.3s; }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* -------------------- HERO (LUXURY SPLIT) -------------------- */
+    #hero { padding-top: 140px; min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; }
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: -30%; right: -10%; width: 60%; height: 120%;
+      background: radial-gradient(ellipse at 70% 50%, rgba(184,134,11,0.03), transparent 70%);
+      pointer-events: none;
+    }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+    .hero-left h1 {
+      font-size: clamp(2.6rem, 5.5vw, 4.8rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+      margin-bottom: 24px;
+    }
+    .hero-left p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 90%;
+      margin-bottom: 36px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+    .hero-badge {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(8px);
+      padding: 8px 24px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      border: 1px solid rgba(184,134,11,0.08);
+      box-shadow: var(--shadow-sm);
+      color: var(--primary);
+      letter-spacing: 0.2px;
+    }
+    .btn-group { display: flex; gap: 18px; flex-wrap: wrap; }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), #1A3A6A);
+      color: white;
+      border: none;
+      padding: 16px 44px;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.4s;
+      box-shadow: 0 8px 28px rgba(10,30,63,0.15);
+      letter-spacing: 0.3px;
+    }
+    .btn-primary:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(184,134,11,0.25);
+      background: linear-gradient(135deg, var(--accent), #A67B0A);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1.5px solid rgba(10,30,63,0.15);
+      padding: 16px 44px;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.4s;
+      backdrop-filter: blur(4px);
+      letter-spacing: 0.3px;
+    }
+    .btn-secondary:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero-right { position: relative; display: flex; justify-content: center; align-items: center; }
+    .card-stack {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      width: 100%;
+      max-width: 520px;
+    }
+    .float-card {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius-lg);
+      padding: 24px 18px;
+      box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.6);
+      border: 1px solid rgba(255,215,0,0.08);
+      transition: 0.4s;
+      animation: float 7s ease-in-out infinite;
+      text-align: center;
+      cursor: default;
+    }
+    .float-card:nth-child(2) { animation-delay: -1.5s; }
+    .float-card:nth-child(3) { animation-delay: -3s; }
+    .float-card:nth-child(4) { animation-delay: -4.5s; }
+    .float-card svg {
+      width: 48px; height: 48px;
+      stroke: var(--accent);
+      stroke-width: 1.2;
+      fill: none;
+      margin-bottom: 10px;
+      filter: drop-shadow(0 2px 8px rgba(184,134,11,0.08));
+    }
+    .float-card span { display: block; font-weight: 600; font-size: 0.95rem; color: var(--primary); letter-spacing: 0.2px; }
+    @keyframes float { 0%,100% { transform: translateY(0px); } 50% { transform: translateY(-16px); } }
+    /* blobs */
+    .blob {
+      position: absolute;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.15;
+      z-index: -1;
+    }
+    .blob-1 { background: var(--accent); top: -20%; left: -20%; }
+    .blob-2 { background: var(--primary); bottom: -20%; right: -20%; }
+
+    /* -------------------- STATS (GOLD ACCENTS) -------------------- */
+    #stats {
+      background: rgba(255,255,255,0.4);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid rgba(255,215,0,0.06);
+      border-bottom: 1px solid rgba(255,215,0,0.06);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      text-align: center;
+      padding: 50px 0;
+    }
+    .stat-item h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -1px;
+    }
+    .stat-item p { color: var(--muted); font-weight: 500; letter-spacing: 0.3px; }
+
+    /* -------------------- SERVICES (LUXURY GRID) -------------------- */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .service-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(255,215,0,0.06);
+      transition: 0.4s;
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      opacity: 0;
+      transition: 0.4s;
+    }
+    .service-card:hover::before { opacity: 1; }
+    .service-card:hover {
+      transform: translateY(-12px) scale(1.01);
+      border-color: rgba(184,134,11,0.15);
+      box-shadow: var(--gold-glow), var(--shadow-lg);
+    }
+    .service-card svg {
+      width: 40px; height: 40px;
+      stroke: var(--accent);
+      stroke-width: 1.3;
+      fill: none;
+      margin-bottom: 16px;
+      transition: 0.4s;
+    }
+    .service-card:hover svg { transform: scale(1.08) rotate(-2deg); }
+    .service-card h4 { font-size: 1.2rem; font-weight: 700; }
+    .service-card p { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+    .service-category {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--accent);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    /* -------------------- WHY CHOOSE (ELEGANT) -------------------- */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+      gap: 28px;
+      margin-top: 40px;
+    }
+    .feature-item {
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(8px);
+      border-radius: var(--radius-md);
+      padding: 28px 20px;
+      box-shadow: var(--shadow-sm);
+      border-left: 4px solid var(--accent);
+      transition: 0.4s;
+      font-weight: 500;
+      font-size: 1rem;
+      color: var(--primary);
+    }
+    .feature-item:hover {
+      box-shadow: var(--gold-glow);
+      transform: translateY(-6px);
+      border-left-width: 8px;
+    }
+
+    /* -------------------- GALLERY (MASONRY LUXE) -------------------- */
+    .gallery-masonry {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .gallery-item {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      cursor: pointer;
+      transition: 0.4s;
+      background: #e8e4df;
+      aspect-ratio: 4/3;
+      border: 1px solid rgba(255,215,0,0.04);
+    }
+    .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: 0.6s;
+    }
+    .gallery-item:hover {
+      transform: scale(1.02);
+      box-shadow: var(--gold-glow);
+    }
+    .gallery-item:hover img { transform: scale(1.06); }
+
+    /* lightbox */
+    .lightbox {
+      position: fixed; inset: 0;
+      background: rgba(10,30,63,0.75);
+      backdrop-filter: blur(24px);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 2000;
+      opacity: 0; pointer-events: none;
+      transition: 0.4s;
+    }
+    .lightbox.open { opacity: 1; pointer-events: auto; }
+    .lightbox img {
+      max-height: 80vh; max-width: 90vw;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+      border: 1px solid rgba(255,215,0,0.1);
+    }
+    .lightbox-close {
+      position: absolute; top: 30px; right: 40px;
+      font-size: 2.8rem; color: white; cursor: pointer;
+      background: none; border: none;
+      transition: 0.3s;
+      opacity: 0.6;
+    }
+    .lightbox-close:hover { opacity: 1; transform: rotate(90deg); }
+    .lightbox-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: white;
+      font-size: 2rem;
+      padding: 14px 24px;
+      border-radius: 100px;
+      backdrop-filter: blur(8px);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .lightbox-nav:hover { background: rgba(255,215,0,0.2); }
+    .lightbox-prev { left: 24px; }
+    .lightbox-next { right: 24px; }
+
+    /* -------------------- ABOUT / CONTACT / ENQUIRY -------------------- */
+    .about-grid, .contact-grid, .enquiry-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+    .contact-card {
+      background: white;
+      padding: 28px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      border-top: 4px solid var(--accent);
+      transition: 0.3s;
+    }
+    .contact-card:hover { box-shadow: var(--gold-glow); }
+    .contact-card h4 { font-weight: 700; margin-bottom: 4px; color: var(--primary); }
+    .contact-card p { color: var(--muted); }
+
+    /* form */
+    .form-group { margin-bottom: 22px; }
+    .form-group label { font-weight: 600; font-size: 0.85rem; display: block; margin-bottom: 6px; color: var(--primary); }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: var(--radius-md);
+      border: 1px solid #e8e4df;
+      background: white;
+      font-family: inherit;
+      transition: 0.3s;
+      font-size: 0.95rem;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 4px rgba(184,134,11,0.08);
+    }
+    .form-group.error input, .form-group.error select { border-color: #C62828; box-shadow: 0 0 0 4px rgba(198,40,40,0.06); }
+    .error-msg { color: #C62828; font-size: 0.8rem; margin-top: 4px; display: none; }
+    .form-group.error .error-msg { display: block; }
+
+    /* toast */
+    .toast {
+      position: fixed; bottom: 40px; right: 40px;
+      background: rgba(10,30,63,0.92);
+      backdrop-filter: blur(16px);
+      color: white;
+      padding: 20px 36px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(255,215,0,0.08);
+      z-index: 3000;
+      transform: translateY(120px);
+      opacity: 0;
+      transition: 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+      max-width: 440px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+
+    /* footer */
+    footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.7);
+      padding: 60px 0 30px;
+      margin-top: 40px;
+      border-top: 1px solid rgba(255,215,0,0.06);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 50px;
+    }
+    .footer-brand h3 {
+      color: white;
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fff, var(--accent-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .footer-brand p { margin-top: 8px; color: rgba(255,255,255,0.6); }
+    .footer-links h5 { color: white; font-weight: 600; margin-bottom: 14px; letter-spacing: 0.5px; }
+    .footer-links a {
+      display: block;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      margin-bottom: 8px;
+      transition: 0.3s;
+    }
+    .footer-links a:hover { color: var(--accent-light); transform: translateX(4px); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 28px;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* scroll top */
+    .scroll-top {
+      position: fixed; bottom: 30px; left: 30px;
+      background: linear-gradient(135deg, var(--primary), #1A3A6A);
+      color: white;
+      border: none;
+      width: 54px; height: 54px;
+      border-radius: 100px;
+      font-size: 1.6rem;
+      cursor: pointer;
+      box-shadow: var(--shadow-lg);
+      transition: 0.4s;
+      opacity: 0; pointer-events: none;
+      z-index: 500;
+      border: 1px solid rgba(255,215,0,0.08);
+    }
+    .scroll-top.visible { opacity: 1; pointer-events: auto; }
+    .scroll-top:hover { transform: scale(1.08) translateY(-4px); background: var(--accent); }
+
+    /* -------------------- RESPONSIVE -------------------- */
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero-left p { max-width: 100%; }
+      .stats-grid { grid-template-columns: repeat(2,1fr); gap: 24px; }
+      .about-grid, .contact-grid, .enquiry-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed; top: 74px; left: 0; width: 100%;
+        background: rgba(255,255,255,0.96);
+        backdrop-filter: blur(24px);
+        flex-direction: column;
+        padding: 36px 0;
+        gap: 24px;
+        transform: translateY(-140%);
+        transition: 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        box-shadow: var(--shadow-lg);
+        border-radius: 0 0 32px 32px;
+        border-bottom: 1px solid rgba(255,215,0,0.06);
+      }
+      .nav-links.open { transform: translateY(0); }
+      .hamburger { display: flex; }
+      .hero-right { margin-top: 20px; }
+      .card-stack { max-width: 340px; gap: 16px; }
+      .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-masonry { grid-template-columns: 1fr 1fr; }
+      .container { padding: 0 20px; }
+      .section-padding { padding: 60px 0; }
+    }
+    @media (max-width: 480px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .gallery-masonry { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .hero-left h1 { font-size: 2.4rem; }
+      .btn-primary, .btn-secondary { padding: 14px 32px; width: 100%; justify-content: center; }
+      .btn-group { flex-direction: column; }
+    }
+
+    /* reveal */
+    .reveal { opacity: 0; transform: translateY(50px); transition: 0.9s cubic-bezier(0.22, 1, 0.36, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* mouse glow */
+    .glow {
+      position: fixed;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      pointer-events: none;
+      background: radial-gradient(circle, rgba(184,134,11,0.03) 0%, transparent 70%);
+      z-index: -1;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="glow" id="glow"></div>
+
+  <!-- NAV -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-container">
+      <div class="logo-group">
+        <span class="logo-icon">⚖️</span>
+        <div>
+          <span class="logo-text">KOLLURI NAVEEN</span>
+          <span class="logo-sub">Licensed Stamp Vendor &amp; Notary</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="#hero" role="menuitem" class="active">Home</a></li>
+        <li role="none"><a href="#services" role="menuitem">Services</a></li>
+        <li role="none"><a href="#gallery" role="menuitem">Gallery</a></li>
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+        <li role="none"><a href="#enquiry" role="menuitem" class="nav-cta">Get Enquiry</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="section-padding">
+    <div class="container hero-grid">
+      <div class="hero-left reveal">
+        <span class="badge-glow">✦ Est. 2010</span>
+        <h1>Trusted Stamp Vendor &amp; Notary Services in <span class="heading-gradient">Hanumakonda</span></h1>
+        <p>All kinds of legal agreements, affidavits, registrations and government digital services handled professionally in Telugu &amp; English.</p>
+        <div class="hero-badges">
+          <span class="hero-badge">✓ Licence No: 21-11-2/2026</span>
+          <span class="hero-badge">✓ Notary Available</span>
+          <span class="hero-badge">✓ Trusted Documentation</span>
+        </div>
+        <div class="btn-group">
+          <button class="btn-primary" onclick="document.getElementById('enquiry').scrollIntoView({behavior:'smooth'})">Book Consultation</button>
+          <a href="tel:+919866798015" class="btn-secondary" style="text-decoration:none;">Call Now</a>
+        </div>
+      </div>
+      <div class="hero-right reveal">
+        <div class="blob blob-1"></div><div class="blob blob-2"></div>
+        <div class="card-stack">
+          <div class="float-card"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8v8H8z"/><path d="M12 4v16"/><path d="M4 12h16"/></svg><span>Legal Documents</span></div>
+          <div class="float-card"><svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="10"/></svg><span>Stamp Papers</span></div>
+          <div class="float-card"><svg viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/><path d="M7 7h10v10H7z"/><path d="M12 7v10"/><path d="M7 12h10"/></svg><span>Government Forms</span></div>
+          <div class="float-card"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>Official Seal</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats">
+    <div class="container stats-grid">
+      <div class="stat-item reveal"><h3 id="stat1">0</h3><p>Years of Experience</p></div>
+      <div class="stat-item reveal"><h3 id="stat2">0</h3><p>Happy Customers</p></div>
+      <div class="stat-item reveal"><h3 id="stat3">0</h3><p>Services Offered</p></div>
+      <div class="stat-item reveal"><h3 id="stat4">0</h3><p>Quick Processing</p></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section-padding">
+    <div class="container">
+      <div class="reveal">
+        <span class="badge-glow">✦ our expertise</span>
+        <h2 class="gold-underline" style="font-size:2.8rem; font-weight:700;">Elite <span class="heading-gradient">Services</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal"><span class="service-category">LEGAL</span><svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7l-10-5z"/><path d="M2 7l10 5 10-5"/><path d="M12 22V12"/></svg><h4>Non Judicial Stamp Papers</h4><p>All denominations available</p></div>
+        <div class="service-card reveal"><span class="service-category">LEGAL</span><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg><h4>Agreements</h4><p>Drafting &amp; notarization</p></div>
+        <div class="service-card reveal"><span class="service-category">LEGAL</span><svg viewBox="0 0 24 24"><path d="M12 2v4M12 22v-4M4 12H2M22 12h-2M19.07 4.93l-2.83 2.83M4.93 19.07l2.83-2.83"/><circle cx="12" cy="12" r="4"/></svg><h4>Affidavits</h4><p>All types, bilingual</p></div>
+        <div class="service-card reveal"><span class="service-category">LEGAL</span><svg viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/><path d="M7 7h10v10H7z"/><path d="M12 7v10"/><path d="M7 12h10"/></svg><h4>Telugu / English Agreements</h4><p>Bilingual documentation</p></div>
+        <div class="service-card reveal"><span class="service-category">GOVERNMENT</span><svg viewBox="0 0 24 24"><path d="M12 2v4M12 22v-4M4 12H2M22 12h-2M19.07 4.93l-2.83 2.83M4.93 19.07l2.83-2.83"/><circle cx="12" cy="12" r="4"/></svg><h4>Bhubaarathi Registrations</h4><p>భూ భారతి రిజిస్ట్రేషన్లు</p></div>
+        <div class="service-card reveal"><span class="service-category">GOVERNMENT</span><svg viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/><path d="M7 7h10v10H7z"/><path d="M12 7v10"/></svg><h4>Udyam Registration</h4><p>ఉద్యమం</p></div>
+        <div class="service-card reveal"><span class="service-category">IDENTITY</span><svg viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4z"/><path d="M20 22v-2a8 8 0 0 0-16 0v2"/></svg><h4>Passport &amp; Aadhaar</h4><p>Download &amp; print</p></div>
+        <div class="service-card reveal"><span class="service-category">STUDENT</span><svg viewBox="0 0 24 24"><path d="M12 2v4M12 22v-4M4 12H2M22 12h-2"/><circle cx="12" cy="12" r="4"/></svg><h4>MBA / MCA / MSW Projects</h4><p>Project assistance</p></div>
+        <div class="service-card reveal"><span class="service-category">BUSINESS</span><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8v8H8z"/><path d="M12 4v16"/></svg><h4>Xerox &amp; High Quality Printouts</h4><p>DTP &amp; printing</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="section-padding" style="background: rgba(255,255,255,0.25); backdrop-filter: blur(4px);">
+    <div class="container">
+      <div class="reveal">
+        <span class="badge-glow">✦ why choose us</span>
+        <h2 class="gold-underline" style="font-size:2.5rem; font-weight:700;">Why <span class="heading-gradient">Kolluri Naveen</span></h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item reveal">✓ Fast Processing</div>
+        <div class="feature-item reveal">✓ Professional Documentation</div>
+        <div class="feature-item reveal">✓ Trusted Legal Support</div>
+        <div class="feature-item reveal">✓ Affordable Pricing</div>
+        <div class="feature-item reveal">✓ Telugu &amp; English Assistance</div>
+        <div class="feature-item reveal">✓ Friendly Service</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section-padding">
+    <div class="container">
+      <div class="reveal">
+        <span class="badge-glow">✦ gallery</span>
+        <h2 class="gold-underline" style="font-size:2.5rem; font-weight:700;">Visual <span class="heading-gradient">Moments</span></h2>
+      </div>
+      <div class="gallery-masonry" id="galleryGrid">
+        <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop&crop=center" alt="Office exterior" loading="lazy"/></div>
+        <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400&h=300&fit=crop&crop=center" alt="Business signboard" loading="lazy"/></div>
+        <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center" alt="Customer service desk" loading="lazy"/></div>
+        <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?w=400&h=300&fit=crop&crop=center" alt="Documentation counter" loading="lazy"/></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-padding" style="background:rgba(255,255,255,0.15);">
+    <div class="container about-grid">
+      <div class="reveal">
+        <span class="badge-glow">✦ about</span>
+        <h2 style="font-size:2.8rem; font-weight:700;">Trusted <span class="heading-gradient">Legal Partner</span></h2>
+        <p style="color:var(--muted); font-size:1.15rem; margin-top:16px; max-width:90%;">Kolluri Naveen is a licensed stamp vendor and notary with years of expertise in legal documentation, government registrations, and citizen support. We provide professional, compliant, and friendly service in Telugu and English, ensuring your legal needs are met with precision and care.</p>
+      </div>
+      <div class="reveal glass-gold" style="padding:40px; border-radius:var(--radius-lg);">
+        <h4 style="font-size:1.4rem; color:var(--primary);">⚖️ Our Commitment</h4>
+        <p style="color:var(--muted); margin-top:8px;">Every document is handled with utmost integrity, from stamp papers to affidavits and digital registrations. We are your trusted partner for all legal formalities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENQUIRY -->
+  <section id="enquiry" class="section-padding">
+    <div class="container enquiry-grid">
+      <div class="reveal">
+        <span class="badge-glow">✦ get in touch</span>
+        <h2 style="font-size:2.8rem; font-weight:700;">Book a <span class="heading-gradient">Consultation</span></h2>
+        <p style="color:var(--muted);">Fill the form and we’ll get back to you within 24 hours.</p>
+      </div>
+      <div class="glass" style="padding:40px; border-radius:var(--radius-lg); border:1px solid rgba(255,215,0,0.06);">
+        <form id="enquiryForm" novalidate>
+          <div class="form-group"><label for="name">Full Name *</label><input type="text" id="name" required placeholder="Your name" /><div class="error-msg">Please enter your name</div></div>
+          <div class="form-group"><label for="phone">Phone *</label><input type="tel" id="phone" required placeholder="+91 9866798015" /><div class="error-msg">Valid phone required</div></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="you@example.com" /></div>
+          <div class="form-group"><label for="service">Service of interest *</label><select id="service" required><option value="">Select service</option><option>Non Judicial Stamp Papers</option><option>Agreements</option><option>Affidavits</option><option>Bhubaarathi Registrations</option><option>Udyam Registration</option><option>Passport / Aadhaar</option><option>MBA / MCA Projects</option><option>Xerox / Printouts</option></select><div class="error-msg">Please select a service</div></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" rows="3" placeholder="Your requirements..."></textarea></div>
+          <button type="submit" class="btn-primary" style="width:100%;">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-padding" style="background:rgba(255,255,255,0.1);">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <span class="badge-glow">✦ contact</span>
+        <h2 style="font-size:2.8rem; font-weight:700;">Reach <span class="heading-gradient">Us</span></h2>
+        <p style="color:var(--muted);">Call, email, or visit our office.</p>
+      </div>
+      <div style="display:grid; gap:20px;">
+        <div class="contact-card"><h4>📞 Phone</h4><p>+91 9866798015</p><p>+91 9908288128</p></div>
+        <div class="contact-card"><h4>✉️ Email</h4><p>kollurinaveen4@gmail.com</p></div>
+        <div class="contact-card"><h4>📍 Address</h4><p>#1-7-897, Near Raj Hotel, BPCL Petrol Bunk, Hunter Road, Hanumakonda 506001</p></div>
+        <div class="contact-card"><h4>🕘 Business Hours</h4><p>Open Daily · 9:00 AM – 8:00 PM</p></div>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="tel:+919866798015" class="btn-primary" style="text-decoration:none;">Call Now</a>
+          <a href="mailto:kollurinaveen4@gmail.com" class="btn-secondary" style="text-decoration:none;">Email</a>
+          <a href="#" class="btn-secondary" style="text-decoration:none;">Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand"><h3>KOLLURI NAVEEN</h3><p>Licensed Stamp Vendor &amp; Notary</p><p style="margin-top:12px;">Trusted legal documentation in Hanumakonda since 2010.</p></div>
+      <div class="footer-links"><h5>Quick Links</h5><a href="#hero">Home</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+      <div class="footer-links"><h5>Services</h5><a href="#services">Stamp Papers</a><a href="#services">Agreements</a><a href="#services">Affidavits</a><a href="#services">Registrations</a></div>
+      <div class="footer-links"><h5>Contact</h5><a href="tel:+919866798015">+91 9866798015</a><a href="mailto:kollurinaveen4@gmail.com">Email</a><p style="color:rgba(255,255,255,0.4); margin-top:8px;">9 AM – 8 PM</p></div>
+    </div>
+    <div class="container footer-bottom">© 2025 Kolluri Naveen · Made with ❤️ in Hanumakonda</div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Image lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+    <img id="lightboxImg" src="" alt="enlarged view" />
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <!-- SCROLL TOP -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script>
+    (function(){
+      // NAV SCROLL & HAMBURGER
+      const nav = document.getElementById('navbar');
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+      const sections = document.querySelectorAll('section[id]');
+      const navAnchors = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+
+      window.addEventListener('scroll', ()=>{
+        nav.classList.toggle('shrink', window.scrollY > 60);
+        let current = '';
+        sections.forEach(s => { const top = s.offsetTop - 130; if(window.scrollY >= top) current = s.id; });
+        navAnchors.forEach(a => { a.classList.toggle('active', a.getAttribute('href') === '#'+current); });
+        document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 500);
+      });
+      hamburger.addEventListener('click', ()=>{
+        const open = navLinks.classList.toggle('open');
+        hamburger.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', open);
+      });
+      navAnchors.forEach(a => a.addEventListener('click', ()=>{
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }));
+      document.querySelector('.nav-cta').addEventListener('click', ()=>{
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+
+      // SCROLL REVEAL
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+      }, {threshold:0.12});
+      reveals.forEach(el => observer.observe(el));
+
+      // ANIMATED COUNTERS
+      function animateCounter(id, target) {
+        let current = 0;
+        const el = document.getElementById(id);
+        const step = Math.ceil(target / 60);
+        const timer = setInterval(()=>{
+          current += step;
+          if(current >= target) { current = target; clearInterval(timer); }
+          el.textContent = current;
+        }, 20);
+      }
+      const statsObserver = new IntersectionObserver((entries)=>{
+        entries.forEach(e => {
+          if(e.isIntersecting && !e.target.dataset.animated){
+            e.target.dataset.animated = 'true';
+            if(e.target.id === 'stat1') animateCounter('stat1', 15);
+            else if(e.target.id === 'stat2') animateCounter('stat2', 2800);
+            else if(e.target.id === 'stat3') animateCounter('stat3', 24);
+            else if(e.target.id === 'stat4') animateCounter('stat4', 98);
+          }
+        });
+      }, {threshold:0.5});
+      document.querySelectorAll('.stat-item h3').forEach(el => statsObserver.observe(el));
+
+      // GALLERY LIGHTBOX
+      const galleryItems = document.querySelectorAll('.gallery-item img');
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      let currentIndex = 0;
+      const images = Array.from(galleryItems).map(img => img.src);
+      function openLightbox(index) {
+        currentIndex = (index + images.length) % images.length;
+        lightboxImg.src = images[currentIndex];
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+      galleryItems.forEach((img, i) => img.addEventListener('click', ()=> openLightbox(i)));
+      document.getElementById('lightboxClose').addEventListener('click', ()=>{
+        lightbox.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+      document.getElementById('lightboxPrev').addEventListener('click', ()=> openLightbox(currentIndex-1));
+      document.getElementById('lightboxNext').addEventListener('click', ()=> openLightbox(currentIndex+1));
+      document.addEventListener('keydown', (e)=>{
+        if(!lightbox.classList.contains('open')) return;
+        if(e.key === 'Escape') { lightbox.classList.remove('open'); document.body.style.overflow = ''; }
+        if(e.key === 'ArrowLeft') openLightbox(currentIndex-1);
+        if(e.key === 'ArrowRight') openLightbox(currentIndex+1);
+      });
+
+      // FORM VALIDATION & TOAST
+      const form = document.getElementById('enquiryForm');
+      const toast = document.getElementById('toast');
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        let valid = true;
+        const fields = [
+          {id:'name', msg:'Please enter your name'},
+          {id:'phone', msg:'Valid phone required'},
+          {id:'service', msg:'Please select a service'}
+        ];
+        fields.forEach(f => {
+          const el = document.getElementById(f.id);
+          const group = el.closest('.form-group');
+          const val = el.value.trim();
+          if(!val || (f.id === 'phone' && !/^[\d\+ \-\(\)]{8,15}$/.test(val))) {
+            group.classList.add('error');
+            valid = false;
+          } else group.classList.remove('error');
+        });
+        if(!valid) return;
+
+        toast.textContent = 'Thank you! Your enquiry has been received. Kolluri Naveen will contact you shortly.';
+        toast.classList.add('show');
+        form.reset();
+        document.querySelectorAll('.form-group').forEach(g => g.classList.remove('error'));
+        setTimeout(()=> toast.classList.remove('show'), 5000);
+      });
+      document.querySelectorAll('.form-group input, .form-group select').forEach(el => {
+        el.addEventListener('input', function(){ this.closest('.form-group').classList.remove('error'); });
+      });
+
+      // SCROLL TO TOP
+      document.getElementById('scrollTop').addEventListener('click', ()=>{
+        window.scrollTo({top:0, behavior:'smooth'});
+      });
+
+      // MOUSE GLOW
+      const glow = document.getElementById('glow');
+      document.addEventListener('mousemove', e => {
+        glow.style.left = e.clientX + 'px';
+        glow.style.top = e.clientY + 'px';
+      });
+    })();
+  </script>
+</body>
+</html>
